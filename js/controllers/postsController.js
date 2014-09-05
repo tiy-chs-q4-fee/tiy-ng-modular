@@ -1,10 +1,14 @@
 angular.module("tiy-ng-modules.controllers")
-  
-  .controller("postsController", function ($scope) {
-    $scope.posts = [
-      {title: "hello world", content: "this is content"},
-      {title: "hello world 1", content: "this is content"},
-      {title: "hello world 2", content: "this is content"},
-      {title: "hello world 3", content: "this is content"},
-    ];
+
+  .controller("postsController", function ($scope, $location, postsService) {
+    $scope.posts = postsService.getPosts();
+    $scope.newPost = function (post) {
+      postsService.createPost(post);
+
+      $location.path("/blog");
+    };
+    $scope.delete = function (idx) {
+      postsService.deletePost(idx);
+    };
+
   });

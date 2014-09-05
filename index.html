@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ng-modules</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body ng-app="tiy-ng-modules">
 
@@ -10,10 +11,19 @@
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="js/app.js"></script>
+
+<!-- Services -->
 <script src="js/services/postsService.js"></script>
+<script src="js/services/postsServerService.js"></script>
+<script src="js/services/githubService.js"></script>
+
+<!-- Controllers -->
 <script src="js/controllers/homeController.js"></script>
 <script src="js/controllers/postsController.js"></script>
+<script src="js/controllers/postsServerController.js"></script>
+<script src="js/controllers/ghRepoCtrl.js"></script>
 
 </body>
 </html>

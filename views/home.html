@@ -1,4 +1,13 @@
+<button ng-click="goToBlog();togglePoo = !togglePoo">toggle poo</button>
+<div ng-class="{poop: togglePoo}">
+hello everyone.
+</div>
+
 <input type="text" ng-model="name">
 {{ hello }} {{ name }}.
 <a href="#/blog">to to blog</a>
 <button ng-click="goToBlog()">Go to Blog</button>
+<div ng-repeat="post in posts">
+  {{post.title}}
+{{post.content}}
+</div>
