@@ -1,8 +1,5 @@
 angular.module("tiy-ng-modules.services")
   .factory("githubService", function ($http) {
-    // var githubRepos = $http.get("https://api.github.com/users/calweb/repos").success(function (data) {
-    //   return data;
-    // });
 
     var githubRepos = function() {
 
